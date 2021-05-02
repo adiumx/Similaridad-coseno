@@ -3,8 +3,8 @@ import numpy as np
 from stop_words import get_stop_words
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
-infile = open("Examen.txt", "r")
-outfile = open("Examen1.txt", "w")
+infile = open("ProyectoF.txt", "r")
+outfile = open("ProyectoF1.txt", "w")
 
 vec1 = np.array([[2,0,1]])
 vec2 = np.array([[1,1,1]])

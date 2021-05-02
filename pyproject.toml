@@ -8,6 +8,9 @@ authors = ["Your Name <you@example.com>"]
 python = "^3.8"
 sklearn = "^0.0"
 stop-words = "^2018.7.23"
+stemming = "^1.0.1"
+spacy = "^3.0.6"
+snowballstemmer = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
 
