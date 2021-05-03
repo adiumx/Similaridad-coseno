@@ -101,7 +101,32 @@ def run():
       for x in range(0, len(TFsentence)):
           listOFTF_IDF.append((TFsentence[x][0],TFsentence[x][1]*IDFsentence[x][1]))
       dictOFTF_IDF[i] = listOFTF_IDF
+  
+  print(dictOFTF_IDF[0])
+  #Cosine similarity
+  #for i in dictOFTF_IDF:
+  v1=dictOFTF_IDF[0]
+  v2=dictOFTF_IDF[0]
+  
+  aux = 0
+  raiz1= 0
+  raiz2= 0
+  #print(v1[0][1])
 
-  print(dictOFTF_IDF)
+  for i in range(len(v1)):
+    aux=aux+(v1[i][1]*v2[i][1])
+    raiz1=raiz1+(v1[i][1]**2)
+    raiz2=raiz2+(v2[i][1]**2)
+  raiz1=math.sqrt(raiz1)
+  raiz2=math.sqrt(raiz2)
+  raiz=raiz1*raiz2
+  vector=[]
+  print(aux/raiz)
+  print(len(allDocumentsNoDuplicates))
+  for index in allDocumentsNoDuplicates:
+    print(index)
+  listOfv1={}
+  listOfv1.append((wordFreq[0],normalizedFreq))
+  print(vector)
 if __name__ == '__main__':
     run()
